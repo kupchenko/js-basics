@@ -1,6 +1,6 @@
 const fail = false;
 
-const response = new Promise((resolve, reject) => {
+const response = new Promise((resolve) => {
     console.log("Requesting data from server");
     setTimeout(() => {
         const data = {
