@@ -22,7 +22,7 @@ delay(2000)
 const fetchData = async function () {
     try {
         console.log(`[Async/Await] Fetching records`);
-        await delay(2000);
+        await delay(2000); //await only in `async` marked function
         const response = await fetch(url);
         const data = await response.json();
         console.log(`[Async/Await] Got ${data.length} records`)
